@@ -1,0 +1,427 @@
+:root {
+    /* Primary */
+    --Purple-600: hsl(246, 80%, 60%);
+
+    --Orange-300-work: hsl(15, 100%, 70%);
+    --Blue-300-play: hsl(195, 74%, 62%);
+    --Pink-400-study: hsl(348, 100%, 68%);
+    --Green-400-exercise: hsl(145, 58%, 55%);
+    --Purple-700-social: hsl(264, 64%, 52%);
+    --Yellow-300-self-care: hsl(43, 84%, 65%);
+
+    /* Neutral */
+    --Navy-950: hsl(226, 43%, 10%);
+    --Navy-900: hsl(235, 46%, 20%);
+    --Purple-500: hsl(235, 45%, 61%);
+    --Navy-200: hsl(236, 100%, 87%);
+    --white: hsl(0, 0%, 100%);
+}
+
+/* CSS Reset */
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+
+* {
+    margin: 0;
+}
+
+html {
+    -moz-text-size-adjust: none;
+    -webkit-text-size-adjust: none;
+    text-size-adjust: none;
+}
+
+body {
+    min-height: 100vh;
+    line-height: 1.5;
+}
+
+h1,
+h2,
+h3,
+h4,
+button,
+input,
+label {
+    line-height: 1.1;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    text-wrap: balance;
+}
+
+p,
+h1,
+h2,
+h3,
+h4 {
+    overflow-wrap: break-word;
+}
+
+img,
+picture {
+    max-width: 100%;
+    display: block;
+}
+
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+/* Common styles */
+body {
+    width: 100%;
+    background: var(--Navy-950);
+    font-family: "Rubik", sans-serif;
+}
+
+.container {
+    width: 87.2%;
+    max-width: 1116px;
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.row__space-between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.col {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Font--Typography */
+
+.font__15 {
+    font-size: .9375rem;
+    font-weight: 400;
+    line-height: 18px;
+}
+
+.font__18--reg {
+    font-size: 1.125rem;
+    font-weight: 400;
+    line-height: 21px;
+}
+
+.font__18--med {
+    font-size: 1.125rem;
+    font-weight: 500;
+    line-height: 21px;
+}
+
+.font__header--title {
+    font-size: 1.5rem;
+    font-size: clamp(1.5rem, -.39rem + 3.6vw, 2.5rem);
+    font-weight: 300;
+    line-height: 1.17;
+}
+
+.font__32--56 {
+    font-size: 2rem;
+    font-size: clamp(2rem, .570rem + 6.1vw, 3.5rem);
+    font-weight: 300;
+    line-height: 1.19;
+}
+
+
+/* Background and Text colors */
+.color__white {
+    color: var(--white);
+}
+
+.color__navy--200 {
+    color: var(--Navy-200)
+}
+
+.bg__navy--900 {
+    background: var(--Navy-900);
+}
+
+.bg__header {
+    background: var(--Purple-600);
+}
+
+.bg__work {
+    background: var(--Orange-300-work);
+}
+
+.bg__play {
+    background: var(--Blue-300-play);
+}
+
+.bg__study {
+    background: var(--Pink-400-study);
+}
+
+.bg__exercise {
+    background: var(--Green-400-exercise);
+}
+
+.bg__social {
+    background: var(--Purple-700-social);
+}
+
+.bg__self-care {
+    background: var(--Yellow-300-self-care);
+}
+
+/* Element--specific styles */
+.hero {
+    width: 100%;
+}
+
+.hero__grid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
+
+.nav {
+    border-radius: .9375rem;
+}
+
+.header {
+    /* padding: 2rem; */
+    padding-block: 2rem;
+    gap: 1.5rem;
+    border-radius: .9375rem;
+}
+
+.img__avatar {
+    width: 4rem;
+    border-radius: 50%;
+    border: 3px solid var(--white);
+}
+
+.header__text {
+    margin-bottom: 0.5rem;
+}
+
+.header__title {
+    text-wrap: nowrap;
+}
+
+.list__style {
+    list-style: none;
+    padding-block: 1.5rem;
+    padding-inline: 0;
+    justify-content: space-around;
+}
+
+.link__item {
+    text-decoration: none;
+    color: var(--Purple-500)
+}
+
+.link__item:hover,
+.link__item:focus,
+.link__item:active {
+    color: var(--white)
+}
+
+.card__group {
+    gap: 1.5rem;
+}
+
+.card {
+    position: relative;
+    width: 100%;
+    /* min-height: 10rem; */
+    height: max(26vw, 10rem);
+    border-radius: .9375rem;
+    overflow: hidden;
+}
+
+.card__bg--icon {
+    position: absolute;
+    top: -8%;
+    right: 0;
+}
+
+.card__bg--exercise-icon {
+    top: initial;
+}
+
+.card__bg--study-icon {
+    top: -4%
+}
+
+.img__icon {
+    padding-inline: 1rem;
+}
+
+.card__title {
+    margin-bottom: 0.5rem;
+}
+
+.ellipsis:hover,
+.ellipsis:focus,
+.ellipsis:active {
+    cursor: pointer;
+    fill: var(--white);
+}
+
+.card__text {
+    width: 100%;
+    min-height: 76.25%;
+    position: absolute;
+    bottom: 0;
+    padding: 1.5rem;
+    border-radius: .9375rem;
+    text-wrap: nowrap;
+}
+
+.attribution {
+    font-size: .6875rem;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 48rem) {
+
+    .header {
+        padding-inline: 2rem;
+    }
+
+    .card__group {
+        min-height: 28.125rem;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .card {
+        height: unset;
+        align-self: stretch;
+        flex: 1 1 11.75rem;
+    }
+
+    .card__report--text {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+    }
+
+}
+
+@media(min-width:48rem) and (max-width:80rem) {
+
+    .card__bg--icon {
+        top: -4%;
+    }
+
+    .card__bg--exercise-icon {
+        top: 0;
+    }
+
+    .img__icon {
+        width: 80%;
+        padding-inline: 0;
+    }
+
+    .hero__grid {
+        width: 38.25rem;
+    }
+
+    .header {
+        min-height: 8.3125rem;
+        justify-content: flex-start;
+    }
+
+    .list__style {
+        min-height: 4.375rem;
+        justify-content: space-evenly;
+        gap: 0.5rem;
+    }
+
+    .card__title {
+        margin-bottom: 1rem;
+    }
+}
+
+@media(min-width: 80rem) {
+    .hero__grid {
+        width: inherit;
+        grid-template-columns: 15.9375rem 1fr;
+        gap: 2rem;
+    }
+
+    .header {
+        height: 22.125rem;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 2.5rem;
+    }
+
+    .img__avatar {
+        width: 4.875rem;
+    }
+
+    .list__style {
+        height: 10.375rem;
+        padding: 2rem;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+
+    .header__title {
+        text-wrap: wrap;
+    }
+
+    .card__group {
+        height: 32.5rem;
+        gap: 2rem;
+    }
+
+    .card {
+        flex: 1 1 15.9375rem;
+    }
+
+    .card__bg--work-icon,
+    .card__bg--self-care-icon {
+        top: -5%
+    }
+
+    .card__bg--play-icon {
+        top: -3%
+    }
+
+    .card__title {
+        margin-bottom: 1.5rem;
+    }
+
+    .card__text {
+        padding: 2rem;
+    }
+}
