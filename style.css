@@ -286,7 +286,7 @@ body {
 .ellipsis:focus,
 .ellipsis:active {
     cursor: pointer;
-    color: var(--white)
+    fill: var(--white)
 }
 
 .card__text {
