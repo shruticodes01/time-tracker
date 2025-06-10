@@ -12,6 +12,7 @@
     /* Neutral */
     --Navy-950: hsl(226, 43%, 10%);
     --Navy-900: hsl(235, 46%, 20%);
+    --Navy-800: hsl(235, 41%, 34%);
     --Purple-500: hsl(235, 45%, 61%);
     --Navy-200: hsl(236, 100%, 87%);
     --white: hsl(0, 0%, 100%);
@@ -282,10 +283,14 @@ body {
     margin-bottom: 0.5rem;
 }
 
+.ellipsis {
+    cursor: pointer;
+}
+
 .ellipsis:hover,
 .ellipsis:focus,
 .ellipsis:active {
-    cursor: pointer;
+    /* cursor: pointer; */
     fill: var(--white)
 }
 
@@ -297,6 +302,14 @@ body {
     padding: 1.5rem;
     border-radius: .9375rem;
     text-wrap: nowrap;
+    cursor: pointer;
+}
+
+.card__text:hover,
+.card__text:focus,
+.card__text:active {
+    /* cursor: pointer; */
+    background: var(--Navy-800);
 }
 
 .attribution {
