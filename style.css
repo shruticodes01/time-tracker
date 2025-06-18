@@ -145,8 +145,7 @@ body {
 }
 
 .font__32--56 {
-    font-size: 2rem;
-    /* font-size: clamp(2rem, .570rem + 6.1vw, 3.5rem); */
+    font-size: clamp(2rem, .570rem + 6.1vw, 3.5rem);
     font-weight: 300;
     line-height: 1.19;
     text-wrap: nowrap;
@@ -351,7 +350,7 @@ body {
 @media(min-width:48rem) and (max-width:80rem) {
 
     .font__32--56 {
-        font-size: 2.75rem;
+        font-size: 2.9rem;
     }
 
     .card__bg--icon {
@@ -390,10 +389,6 @@ body {
 }
 
 @media(min-width: 80rem) {
-
-    .font__32--56 {
-        font-size: 3.5rem;
-    }
 
     .hero__grid {
         width: inherit;
