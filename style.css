@@ -146,9 +146,10 @@ body {
 
 .font__32--56 {
     font-size: 2rem;
-    font-size: clamp(2rem, .570rem + 6.1vw, 3.5rem);
+    /* font-size: clamp(2rem, .570rem + 6.1vw, 3.5rem); */
     font-weight: 300;
     line-height: 1.19;
+    text-wrap: nowrap;
 }
 
 
@@ -349,12 +350,12 @@ body {
 
 @media(min-width:48rem) and (max-width:80rem) {
 
-    .card__bg--icon {
-        top: -4%;
+    .font__32--56 {
+        font-size: 2.75rem;
     }
 
-    .card__bg--exercise-icon {
-        top: 0;
+    .card__bg--icon {
+        top: -4%;
     }
 
     .img__icon {
@@ -377,12 +378,23 @@ body {
         gap: 0.5rem;
     }
 
+    .card__text {
+        height: 11.25rem;
+    }
+
     .card__title {
         margin-bottom: 1rem;
     }
+
+
 }
 
 @media(min-width: 80rem) {
+
+    .font__32--56 {
+        font-size: 3.5rem;
+    }
+
     .hero__grid {
         width: inherit;
         grid-template-columns: 15.9375rem 1fr;
@@ -437,4 +449,6 @@ body {
     .card__text {
         padding: 2rem;
     }
+
+
 }
