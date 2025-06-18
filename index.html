@@ -28,13 +28,13 @@
             </div>
           </div>
           <ul class="list__style row__space-between">
-            <li><a class="link__item font__18--reg" href="daily-report" target="_self">Daily</a></li>
-            <li><a class="link__item font__18--reg" href="weekly-report" target="_self">Weekly</a></li>
-            <li><a class="link__item font__18--reg" href="monthly-report" target="_self">Monthly</a></li>
+            <li><a class="link__item font__18--reg" id="daily" href="#" target="_self">Daily</a></li>
+            <li><a class="link__item font__18--reg" id="weekly" href="#" target="_self">Weekly</a></li>
+            <li><a class="link__item font__18--reg" id="monthly" href="#" target="_self">Monthly</a></li>
           </ul>
         </div>
 
-        <div class="col card__group" id="daily-report">
+        <div class="col card__group" id="report">
 
           <div class="card bg__work">
             <div class="card__bg--icon card__bg--work-icon">
@@ -42,12 +42,12 @@
             </div>
             <div class="bg__navy--900 card__text">
               <div class="row__space-between card__title">
-                <h2 class="color__white font__18--med">Work</h2>
+                <h2 class="color__white font__18--med title">Work</h2>
                 <img class="ellipsis" src="images/icon-ellipsis.svg" alt="ellipsis icon">
               </div>
-              <div class="row__space-between card__report--text">
-                <h3 class="color__white font__32--56">5hrs </h3><!-- daily -->
-                <p class="color__navy--200 font__15">Previous - 7hrs</p> <!-- daily -->
+              <div class="row__space-between card__report--text" id="work">
+                <h3 class="color__white font__32--56 current">5hrs</h3>
+                <p class="color__navy--200 font__15 previous">Previous - 7hrs</p>
               </div>
 
             </div>
@@ -60,13 +60,13 @@
             </div>
             <div class="bg__navy--900 card__text">
               <div class="row__space-between card__title">
-                <h2 class="color__white font__18--med">Play</h2>
+                <h2 class="color__white font__18--med title">Play</h2>
                 <img class="ellipsis" src="images/icon-ellipsis.svg" alt="ellipsis icon">
               </div>
 
-              <div class="row__space-between card__report--text">
-                <h3 class="color__white font__32--56">1hr</h3> <!-- daily -->
-                <p class="color__navy--200 font__15">Previous - 2hrs</p> <!-- daily -->
+              <div class="row__space-between card__report--text" id="play">
+                <h3 class="color__white font__32--56 current">1hr</h3>
+                <p class="color__navy--200 font__15 previous">Previous - 2hrs</p>
               </div>
 
             </div>
@@ -80,13 +80,13 @@
 
             <div class="bg__navy--900 card__text">
               <div class="row__space-between card__title">
-                <h2 class="color__white font__18--med">Study</h2>
+                <h2 class="color__white font__18--med title">Study</h2>
                 <img class="ellipsis" src="images/icon-ellipsis.svg" alt="ellipsis icon">
               </div>
 
-              <div class="row__space-between card__report--text">
-                <h3 class="color__white font__32--56">0hrs </h3><!-- daily -->
-                <p class="color__navy--200 font__15">Previous - 1hr</p> <!-- daily -->
+              <div class="row__space-between card__report--text" id="study">
+                <h3 class="color__white font__32--56 current">0hr</h3>
+                <p class="color__navy--200 font__15 previous">Previous - 1hr</p>
               </div>
 
             </div>
@@ -99,13 +99,13 @@
             </div>
             <div class="bg__navy--900 card__text">
               <div class="row__space-between card__title">
-                <h2 class="color__white font__18--med">Exercise</h2>
+                <h2 class="color__white font__18--med title">Exercise</h2>
                 <img class="ellipsis" src="images/icon-ellipsis.svg" alt="ellipsis icon">
               </div>
 
-              <div class="row__space-between card__report--text">
-                <h3 class="color__white font__32--56">1hr</h3> <!-- daily -->
-                <p class="color__navy--200 font__15">Previous - 1hr</p> <!-- daily -->
+              <div class="row__space-between card__report--text" id="exercise">
+                <h3 class="color__white font__32--56 current">1hr</h3>
+                <p class="color__navy--200 font__15 previous">Previous - 1hr</p>
               </div>
 
             </div>
@@ -119,13 +119,13 @@
 
             <div class="bg__navy--900 card__text">
               <div class="row__space-between card__title">
-                <h2 class="color__white font__18--med">Social</h2>
+                <h2 class="color__white font__18--med title">Social</h2>
                 <img class="ellipsis" src="images/icon-ellipsis.svg" alt="ellipsis icon">
               </div>
 
-              <div class="row__space-between card__report--text">
-                <h3 class="color__white font__32--56">1hr</h3> <!-- daily -->
-                <p class="color__navy--200 font__15">Previous - 3hrs</p> <!-- daily -->
+              <div class="row__space-between card__report--text" id="social">
+                <h3 class="color__white font__32--56 current">1hr</h3>
+                <p class="color__navy--200 font__15 previous">Previous - 3hrs</p>
               </div>
 
             </div>
@@ -138,13 +138,13 @@
             </div>
             <div class="bg__navy--900 card__text">
               <div class="row__space-between card__title">
-                <h2 class="color__white font__18--med">Self Care</h2>
+                <h2 class="color__white font__18--med title">Self Care</h2>
                 <img class="ellipsis" src="images/icon-ellipsis.svg" alt="ellipsis icon">
               </div>
 
-              <div class="row__space-between card__report--text">
-                <h3 class="color__white font__32--56">0hrs</h3> <!-- daily -->
-                <p class="color__navy--200 font__15">Previous - 1hr</p> <!-- daily -->
+              <div class="row__space-between card__report--text" id="self care">
+                <h3 class="color__white font__32--56 current">0hr</h3>
+                <p class="color__navy--200 font__15 previous">Previous - 1hr</p>
               </div>
 
             </div>
@@ -153,241 +153,6 @@
 
         </div>
 
-        <div class="col card__group hidden" id="weekly-report">
-
-          <div class="card bg__work">
-            <div class="card__bg--icon card__bg--work-icon">
-              <img class="img__icon" src="images/icon-work.svg" alt="work-icon">
-            </div>
-            <div class="bg__navy--900 card__text">
-              <div class="row__space-between card__title">
-                <h2 class="color__white font__18--med">Work</h2>
-                <img class="ellipsis" src="images/icon-ellipsis.svg" alt="ellipsis icon">
-              </div>
-
-              <div class="row__space-between card__report--text">
-                <h3 class="color__white font__32--56">32hrs</h3> <!-- weekly -->
-                <p class="color__navy--200 font__15">Previous - 36hrs</p> <!-- weekly -->
-              </div>
-
-            </div>
-
-          </div>
-
-          <div class="card bg__play">
-            <div class="card__bg--icon card__bg--play-icon">
-              <img class="img__icon" src="images/icon-play.svg" alt="play-icon">
-            </div>
-            <div class="bg__navy--900 card__text">
-              <div class="row__space-between card__title">
-                <h2 class="color__white font__18--med">Play</h2>
-                <img class="ellipsis" src="images/icon-ellipsis.svg" alt="ellipsis icon">
-              </div>
-
-              <div class="row__space-between card__report--text">
-                <h3 class="color__white font__32--56">10hrs</h3> <!-- weekly -->
-                <p class="color__navy--200 font__15">Previous - 8hrs</p> <!-- weekly -->
-              </div>
-
-            </div>
-
-          </div>
-
-          <div class="card bg__study">
-            <div class="card__bg--icon card__bg--study-icon">
-              <img class="img__icon" src="images/icon-study.svg" alt="study-icon">
-            </div>
-            <div class="bg__navy--900 card__text">
-              <div class="row__space-between card__title">
-                <h2 class="color__white font__18--med">Study</h2>
-                <img class="ellipsis" src="images/icon-ellipsis.svg" alt="ellipsis icon">
-              </div>
-
-              <div class="row__space-between card__report--text">
-                <h3 class="color__white font__32--56">4hrs</h3> <!-- weekly -->
-                <p class="color__navy--200 font__15">Previous - 7hrs</p> <!-- weekly -->
-              </div>
-
-            </div>
-
-          </div>
-
-          <div class="card bg__exercise">
-            <div class="card__bg--icon card__bg--exercise-icon">
-              <img class="img__icon" src="images/icon-exercise.svg" alt="exercise-icon">
-            </div>
-            <div class="bg__navy--900 card__text">
-              <div class="row__space-between card__title">
-                <h2 class="color__white font__18--med">Exercise</h2>
-                <img class="ellipsis" src="images/icon-ellipsis.svg" alt="ellipsis icon">
-              </div>
-
-              <div class="row__space-between card__report--text">
-                <h3 class="color__white font__32--56">4hrs</h3> <!-- weekly -->
-                <p class="color__navy--200 font__15">Previous - 5hrs</p> <!-- weekly -->
-              </div>
-
-            </div>
-
-          </div>
-
-          <div class="card bg__social">
-            <div class="card__bg--icon">
-              <img class="img__icon" src="images/icon-social.svg" alt="social-icon">
-            </div>
-            <div class="bg__navy--900 card__text">
-              <div class="row__space-between card__title">
-                <h2 class="color__white font__18--med">Social</h2>
-                <img class="ellipsis" src="images/icon-ellipsis.svg" alt="ellipsis icon">
-              </div>
-
-              <div class="row__space-between card__report--text">
-                <h3 class="color__white font__32--56">5hrs</h3> <!-- weekly -->
-                <p class="color__navy--200 font__15">Previous - 10hrs</p> <!-- weekly -->
-              </div>
-
-            </div>
-
-          </div>
-
-          <div class="card bg__self-care">
-            <div class="card__bg--icon card__bg--self-care-icon">
-              <img class="img__icon" src="images/icon-self-care.svg" alt="self-care icon">
-            </div>
-            <div class="bg__navy--900 card__text">
-              <div class="row__space-between card__title">
-                <h2 class="color__white font__18--med">Self Care</h2>
-                <img class="ellipsis" src="images/icon-ellipsis.svg" alt="ellipsis icon">
-              </div>
-
-              <div class="row__space-between card__report--text">
-                <h3 class="color__white font__32--56">2hrs</h3> <!-- weekly -->
-                <p class="color__navy--200 font__15">Previous - 2hrs</p> <!-- weekly -->
-              </div>
-
-            </div>
-
-          </div>
-
-        </div>
-
-        <div class="col card__group hidden" id="monthly-report">
-
-          <div class="card bg__work">
-            <div class="card__bg--icon card__bg--work-icon">
-              <img class="img__icon" src="images/icon-work.svg" alt="work-icon">
-            </div>
-            <div class="bg__navy--900 card__text">
-              <div class="row__space-between card__title">
-                <h2 class="color__white font__18--med">Work</h2>
-                <img class="ellipsis" src="images/icon-ellipsis.svg" alt="ellipsis icon">
-              </div>
-
-              <div class="row__space-between card__report--text">
-                <h3 class="color__white font__32--56">103hrs</h3> <!-- monthly -->
-                <p class="color__navy--200 font__15">Previous - 128hrs</p> <!-- monthly -->
-              </div>
-
-            </div>
-
-          </div>
-
-          <div class="card bg__play">
-            <div class="card__bg--icon card__bg--play-icon">
-              <img class="img__icon" src="images/icon-play.svg" alt="play-icon">
-            </div>
-            <div class="bg__navy--900 card__text">
-              <div class="row__space-between card__title">
-                <h2 class="color__white font__18--med">Play</h2>
-                <img class="ellipsis" src="images/icon-ellipsis.svg" alt="ellipsis icon">
-              </div>
-
-              <div class="row__space-between card__report--text">
-                <h3 class="color__white font__32--56">23hrs</h3> <!-- monthly -->
-                <p class="color__navy--200 font__15">Previous - 29hrs</p> <!-- monthly -->
-              </div>
-
-            </div>
-
-          </div>
-
-          <div class="card bg__study">
-            <div class="card__bg--icon card__bg--study-icon">
-              <img class="img__icon" src="images/icon-study.svg" alt="study-icon">
-            </div>
-
-            <div class="bg__navy--900 card__text">
-              <div class="row__space-between card__title">
-                <h2 class="color__white font__18--med">Study</h2>
-                <img class="ellipsis" src="images/icon-ellipsis.svg" alt="ellipsis icon">
-              </div>
-
-              <div class="row__space-between card__report--text">
-                <h3 class="color__white font__32--56">13hrs</h3> <!-- monthly -->
-                <p class="color__navy--200 font__15">Previous - 19hrs</p> <!-- monthly -->
-              </div>
-
-            </div>
-
-          </div>
-
-          <div class="card bg__exercise">
-            <div class="card__bg--icon card__bg--exercise-icon">
-              <img class="img__icon" src="images/icon-exercise.svg" alt="exercise-icon">
-            </div>
-            <div class="bg__navy--900 card__text">
-              <div class="row__space-between card__title">
-                <h2 class="color__white font__18--med">Exercise</h2>
-                <img class="ellipsis" src="images/icon-ellipsis.svg" alt="ellipsis icon">
-              </div>
-
-              <div class="row__space-between card__report--text">
-                <h3 class="color__white font__32--56">11hrs</h3> <!-- monthly -->
-                <p class="color__navy--200 font__15">Previous - 18hrs</p> <!-- monthly -->
-              </div>
-
-            </div>
-
-          </div>
-
-          <div class="card bg__social">
-            <div class="card__bg--icon">
-              <img class="img__icon" src="images/icon-social.svg" alt="social-icon">
-            </div>
-
-            <div class="bg__navy--900 card__text">
-              <div class="row__space-between card__title">
-                <h2 class="color__white font__18--med">Social</h2>
-                <img class="ellipsis" src="images/icon-ellipsis.svg" alt="ellipsis icon">
-              </div>
-
-              <div class="row__space-between card__report--text">
-                <h3 class="color__white font__32--56">21hrs</h3> <!-- monthly -->
-                <p class="color__navy--200 font__15">Previous - 23hrs</p> <!-- monthly -->
-              </div>
-            </div>
-          </div>
-
-          <div class="card bg__self-care">
-            <div class="card__bg--icon card__bg--self-care-icon">
-              <img class="img__icon" src="images/icon-self-care.svg" alt="self-care icon">
-            </div>
-            <div class="bg__navy--900 card__text">
-              <div class="row__space-between card__title">
-                <h2 class="color__white font__18--med">Self Care</h2>
-                <img class="ellipsis" src="images/icon-ellipsis.svg" alt="ellipsis icon">
-              </div>
-
-              <div class="row__space-between card__report--text">
-                <h3 class="color__white font__32--56">7hrs</h3> <!-- monthly -->
-                <p class="color__navy--200 font__15">Previous - 11hrs</p> <!-- monthly -->
-              </div>
-
-            </div>
-
-          </div>
-
-        </div>
       </div>
     </div>
   </main>
@@ -398,7 +163,7 @@
       <p class="color__white">Coded by <a href="#">Your Name Here</a>.</p>
     </div>
   </footer>
-  <script src="main.js"></script>
+  <script defer src="main.js"></script>
 </body>
 
 </html>
